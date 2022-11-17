@@ -1,0 +1,560 @@
+
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Medium;
+    src: url(../fonts/OpenSans-Medium.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+/* ================== Defualt Browser =========================== */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width:1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;  
+}
+
+/*========== ==========================Global Style====================== =============*/
+
+body{
+    font-family: OpenSans-Regular; 
+}
+
+h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+}
+h6{
+    font-size: 17px;
+    line-height: 23px;
+    font-family: OpenSans-Regular;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.text-white{
+    color: #ffff;
+}
+
+      /* ===========================Custom Design==================== */
+
+/* =================================Tobbar Section============================ */
+.top-bar-section{
+    background-color: #173a69;
+    padding: 12px 0;
+}
+
+.top-bar-section .top-bar-parrents .top-bar-one,
+.top-bar-section .top-bar-parrents .top-bar-two{
+    width: 50%;
+}
+
+.top-bar-section .top-bar-parrents .top-bar-one li a{
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 5px;
+}
+.top-bar-section .top-bar-parrents .top-bar-one li{
+    margin-right: 35px;
+}
+.top-bar-section .top-bar-parrents .top-bar-two ul{
+    justify-content: end;
+}
+.top-bar-section .top-bar-parrents .top-bar-two ul li{
+    margin-left: 20px;
+}
+
+
+/* =============================Nav Bar Section======================= */
+
+.nav-bar-section .nav-bar-parrents .nav-bar-one,
+.nav-bar-section .nav-bar-parrents .nav-bar-two{
+    width: 50%;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul{
+    justify-content: space-between;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li{
+       padding: 40px 20px; 
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li:hover{
+    background-color:#fbfbfb; 
+ }  
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li a{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: OpenSans-SemiBold;
+    color: #0c1f38;
+    text-transform: uppercase;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li {
+    position: relative;
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li:hover:after{
+    width: 100%;
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0c1f38;
+    bottom: 0;
+    transition: 1s;
+}
+
+
+/* ======================== service banner and overly ============================= */
+
+.service-banner-section{
+    background-image: url(/img/service-banner-overly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    
+}
+.service-banner-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/service-banner-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    opacity: .3;
+    
+}
+.service-banner-section .banner-text{
+    text-align: center;
+}
+.service-banner-section .banner-text h2{
+    font-size: 32px;
+    line-height: 38px;
+    font-family: OpenSans-ExtraBold;
+    color: #ffffff;
+}
+.service-banner-section .banner-text p{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: OpenSans-Regular;
+    color: #ffffff;
+}
+
+
+/* ====================== Wellcome to silvar hwak ========================= */
+
+
+.about-us-section{
+    background-image: url(../img/about-us-img/about-us-backgraound-4.png);
+    background-repeat: no-repeat;
+    padding: 115px 0;
+    background-size: cover;
+    background-position: center;  
+
+}
+
+.about-us-section .about-us-parrents{
+    column-gap: 4%;
+    flex-wrap: wrap;
+}
+.about-us-section .about-us-parrents .about-us-one{
+    width: 43%;
+    position: relative;
+    z-index: 1;
+}
+.about-us-section .about-us-parrents .about-us-one::after {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 255px;
+    border: 2px dashed #b4b2b2;
+    top: 0px;
+    z-index: -1;
+   
+}
+.about-us-section .about-us-parrents .about-us-one .img-one img{
+    padding-left: 15px;
+    padding-top: 20px;
+    
+}
+
+.about-us-section .about-us-parrents .about-us-one .img-two img{
+    position: absolute;
+    top: 15px;
+    left: 10px; 
+    bottom: 0px;
+    right: 0px;
+    /* display: none; */
+    transform: scale(0);
+    transition: transform .5s;  
+    
+} 
+
+.about-us-section .about-us-parrents .about-us-one:hover .img-two img{
+    /* display: block; */
+    transform: scale(.98);
+} 
+
+
+.about-us-section .about-us-parrents .about-us-two{
+    width: 53%; 
+} 
+
+.about-us-section .about-us-parrents .about-us-two .text-border h2 {
+    padding: 20px 0;
+    position: relative;
+}
+.about-us-section .about-us-parrents .about-us-two .text-border h2 span{
+    color: #173a69;
+    font-family: OpenSans-ExtraBold;
+}
+.about-us-section .about-us-parrents .about-us-two .text-border h2::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 85px;
+    background: #173a69;
+    left: 22px;
+    bottom: 0;
+}
+.about-us-section .about-us-parrents .about-us-two .text-border h2::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 0;
+    background: #173a69;
+    bottom: -4px;
+    transform: rotate(45deg);
+}
+
+.about-us-section .about-us-parrents .about-us-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 30px; */
+ }
+
+.about-us-section .about-us-parrents .about-us-two .text-border .fast-p{
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 25px;  
+}
+
+/* ===================================== Card section ================================== */
+
+.about-card-section{
+    background-image: url(/img/about-us-img/icons-img/about-back-img-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 75px 0;
+    position: relative;
+    z-index: 1;
+}
+.about-card-section::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/abou-card-overly-1.png);
+    top: 0;
+    z-index: -1;
+    opacity: .7;
+}
+
+
+.about-card-section .cards-parrents {
+    flex-wrap: wrap;
+    column-gap: 2%;
+   
+}
+.about-card-section .cards-parrents .card{
+    width: 31%;
+    background-color: #ffffff;
+    padding: 30px 5px 40px 5px;
+    position: relative;
+}
+.about-card-section .cards-parrents .card .card-img img{
+    border: 1px solid #173a69;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/* .about-card-section .cards-parrents .card .card-text-border .border-left{
+    position: relative;
+} */
+.about-card-section .cards-parrents .card .card-text-border .border-left::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 64px;
+    background: #173a69;
+    bottom: 170px;
+    left: 110px;
+    /* display: block; */
+}
+
+.about-card-section .cards-parrents .card .card-text-border h3{
+    font-size: 22px;
+    line-height: 28px;
+    font-family: OpenSans-Regular;
+    text-transform: uppercase;
+    color: #173a69;
+    margin-top: 14px;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+.about-card-section .cards-parrents .card .card-text-border h3::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 50%;
+    background: #173a69;
+    bottom: -100%;
+    transform: rotate(45deg);
+}
+.about-card-section .cards-parrents .card .card-text-border .border-right{
+    position: relative;
+}
+.about-card-section .cards-parrents .card .card-text-border .border-right::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 64px;
+    background: #173a69;
+    /* left: -53%; */
+    right: -267px;
+    bottom: 25px;
+}
+
+.about-card-section .cards-parrents .card .card-text-border  p{
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 21px;
+    font-family: OpenSans-Regular;
+    text-align: center;
+}
+
+/* ================================ constraction heading ======================= */
+.constraction-hedding .container h4{
+    font-size: 21px;
+    line-height: 27px;
+    font-family: OpenSans-bold;
+    text-align: center;
+    padding: 40px 0;
+}
+.constraction-hedding .container h4 span{
+    color: #173a69;
+}
+
+/* ============================== genarel constraction ============================== */
+
+.genarel-constraction{
+    background-image: url(/img/about-us-img/constraction-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 82px;
+    padding-bottom: 112px;
+}
+.genarel-constraction .contstraction-card-parrents {
+    flex-wrap: wrap;
+    column-gap: 3%;
+   
+}
+.genarel-constraction .contstraction-card-parrents .card{
+    width: 31%;
+}
+.genarel-constraction .contstraction-card-parrents .card .img-one  img{
+    border: 1px solid #173a69;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.genarel-constraction .contstraction-card-parrents .card .img-two img{
+    border: 1px solid #173a69;
+    padding: 21px 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.genarel-constraction .contstraction-card-parrents .card .img-three  img{
+    border: 1px solid #173a69;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.genarel-constraction .contstraction-card-parrents .card .card-text-border{
+    text-align: center;
+}
+
+.genarel-constraction .contstraction-card-parrents .card .card-text-border h3{
+    font-size: 22px;
+    line-height: 28px;
+    font-family: OpenSans-Regular;
+    text-transform: uppercase;
+    color: #173a69;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.genarel-constraction .contstraction-card-parrents .card .card-text-border  p{
+    font-size: 15px;
+    line-height: 21px;
+    font-family: OpenSans-Regular;
+    text-align: center;
+}
+
+/* =================================== project-today-section ============================ */
+.project-today-section{
+    background-color: #173a69;
+    padding: 85px 0;
+}
+
+
+.project-today-section .project-today-parrents{
+    justify-content: center;
+    align-items: center;
+}
+.project-today-section .project-today-parrents .pra p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: OpenSans-Regular;
+    color: #ffff;
+}
+.project-today-section .project-today-parrents .number h2{
+    margin-left: 10px;
+    font-family: OpenSans-ExtraBold;
+    color: #ffff;
+}
+
+/* ===============================  last-section  =============================== */
+
+.last-section .last-section-parrents .logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-section .last-section-parrents .logo-img img {
+    height: 120px;
+    width: 230px;
+    margin: 60px 0 20px 0;
+}
+.last-section .last-section-parrents .social-icons ul{
+    justify-content: center;
+    align-items: center;
+}
+.last-section .last-section-parrents .social-icons ul li a i{
+    color:#acacac ;
+}
+
+.last-section .last-section-parrents .social-icons ul .facebook{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul .twiter{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 18px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul .google{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 16px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul li:hover{
+    background: #acacac;
+    cursor: pointer;
+   
+}
+.last-section .last-section-parrents .social-icons ul li:hover a i{
+    color: #173a69;
+}
+
+/* ============================== footer ============================= */
+.footer-section{
+    background-color: #000000;
+    padding: 25px 0;
+    margin-top: 65px;
+}
+.footer-section .text p{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: OpenSans-semiBold;
+    color: #ffff;
+    text-align: center;
+}
+.footer-section .text p a{
+    color: #ffff;
+    text-decoration: underline;
+    font-family: OpenSans-Bold;
+}

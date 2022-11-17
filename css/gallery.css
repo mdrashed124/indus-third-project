@@ -1,0 +1,350 @@
+
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Medium;
+    src: url(../fonts/OpenSans-Medium.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+/* ================== Defualt Browser =========================== */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width:1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;  
+}
+
+/*========== ==========================Global Style====================== =============*/
+
+body{
+    font-family: OpenSans-Regular; 
+}
+
+h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+}
+h6{
+    font-size: 17px;
+    line-height: 23px;
+    font-family: OpenSans-Regular;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.text-white{
+    color: #ffff;
+}
+
+      /* ===========================Custom Design==================== */
+
+/* =================================Tobbar Section============================ */
+.top-bar-section{
+    background-color: #173a69;
+    padding: 12px 0;
+}
+
+.top-bar-section .top-bar-parrents .top-bar-one,
+.top-bar-section .top-bar-parrents .top-bar-two{
+    width: 50%;
+}
+
+.top-bar-section .top-bar-parrents .top-bar-one li a{
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 5px;
+}
+.top-bar-section .top-bar-parrents .top-bar-one li{
+    margin-right: 35px;
+}
+.top-bar-section .top-bar-parrents .top-bar-two ul{
+    justify-content: end;
+}
+.top-bar-section .top-bar-parrents .top-bar-two ul li{
+    margin-left: 20px;
+}
+
+
+/* =============================Nav Bar Section======================= */
+
+.nav-bar-section .nav-bar-parrents .nav-bar-one,
+.nav-bar-section .nav-bar-parrents .nav-bar-two{
+    width: 50%;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul{
+    justify-content: space-between;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li{
+       padding: 40px 20px; 
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li:hover{
+    background-color:#fbfbfb; 
+
+ }  
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li a{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: OpenSans-SemiBold;
+    color: #0c1f38;
+    text-transform: uppercase;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li {
+    position: relative;
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li:hover:after{
+    width: 100%;
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0c1f38;
+    bottom: 0;
+    transition: 1s;
+}
+
+/* =============================== banner and overly========================== */
+
+.service-banner-section{
+    background-image: url(/img/service-banner-overly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    
+}
+.service-banner-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/service-banner-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    opacity: .3;
+    
+}
+.service-banner-section .banner-text{
+    text-align: center;
+}
+.service-banner-section .banner-text h2{
+    font-size: 32px;
+    line-height: 38px;
+    font-family: OpenSans-ExtraBold;
+    color: #ffffff;
+}
+.service-banner-section .banner-text p{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: OpenSans-Regular;
+    color: #ffffff;
+}
+
+/* =================================  galley section======================== */
+
+.gallery-section{
+    margin-top: 85px;
+}
+.gallery-section .gallery-parrents{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.gallery-section .gallery-parrents .box{
+    width: 360px;
+    height: 260px;
+    background: #173a69;
+    margin: 20px 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+}
+
+.gallery-section .gallery-parrents .box .img-box {
+    position: relative;
+    overflow: hidden;
+}
+.gallery-section .gallery-parrents .box .img-box img{
+   
+    max-width: 100%;
+    display: block ;
+    transition: transform 2s;
+}
+
+.gallery-section .gallery-parrents .box:hover .img-box img{
+    transform: scale(1.2);
+}
+.gallery-section .gallery-parrents .box .details{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0,0,0,.8);
+    text-align: center;   
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.gallery-section .gallery-parrents .box:hover .details{
+    transform: scaleY(1);
+}
+
+
+
+.gallery-section .gallery-parrents .box .details .content{
+    padding: 20px;
+    color: #ffff;
+
+}
+.gallery-section .gallery-parrents .box .details a {
+    
+    color: #fbfbfb;
+    height: 40px;
+    width: 40px;
+    padding: 5px 9px;
+    border: 2px solid #fbfbfb;
+    border-radius: 50%;
+}
+.gallery-section .gallery-parrents .box .details a i {
+    padding-top: 60px;
+    justify-content: center;
+    
+}
+
+
+/* =================================== project-today-section ============================ */
+.project-today-section{
+    margin-top: 90px;
+    background-color: #173a69;
+    padding: 85px 0;
+}
+.project-today-section .project-today-parrents{
+    justify-content: center;
+    align-items: center;
+}
+.project-today-section .project-today-parrents .pra p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: OpenSans-Regular;
+    color: #ffff;
+}
+.project-today-section .project-today-parrents .number h2{
+    margin-left: 10px;
+    font-family: OpenSans-ExtraBold;
+    color: #ffff;
+}
+
+/* ===============================  last-section  =============================== */
+
+.last-section .last-section-parrents .logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-section .last-section-parrents .logo-img img {
+    height: 120px;
+    width: 230px;
+    margin: 60px 0 20px 0;
+}
+.last-section .last-section-parrents .social-icons ul{
+    justify-content: center;
+    align-items: center;
+}
+.last-section .last-section-parrents .social-icons ul li a i{
+    color:#acacac ;
+}
+
+.last-section .last-section-parrents .social-icons ul .facebook{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul .twiter{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 18px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul .google{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 16px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul li:hover{
+    background: #acacac;
+    cursor: pointer;
+   
+}
+.last-section .last-section-parrents .social-icons ul li:hover a i{
+    color: #173a69;
+}
+
+/* ============================== footer ============================= */
+.footer-section{
+    background-color: #000000;
+    padding: 25px 0;
+    margin-top: 65px;
+}
+.footer-section .text p{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: OpenSans-semiBold;
+    color: #ffff;
+    text-align: center;
+}
+.footer-section .text p a{
+    color: #ffff;
+    text-decoration: underline;
+    font-family: OpenSans-Bold;
+}

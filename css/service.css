@@ -1,0 +1,384 @@
+
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Medium;
+    src: url(../fonts/OpenSans-Medium.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+/* ================== Defualt Browser =========================== */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width:1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;  
+}
+
+/*========== ==========================Global Style====================== =============*/
+
+body{
+    font-family: OpenSans-Regular; 
+}
+
+h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+}
+h6{
+    font-size: 17px;
+    line-height: 23px;
+    font-family: OpenSans-Regular;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.text-white{
+    color: #ffff;
+}
+
+      /* ===========================Custom Design==================== */
+
+/* =================================Tobbar Section============================ */
+.top-bar-section{
+    background-color: #173a69;
+    padding: 12px 0;
+}
+
+.top-bar-section .top-bar-parrents .top-bar-one,
+.top-bar-section .top-bar-parrents .top-bar-two{
+    width: 50%;
+}
+
+.top-bar-section .top-bar-parrents .top-bar-one li a{
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 5px;
+}
+.top-bar-section .top-bar-parrents .top-bar-one li{
+    margin-right: 35px;
+}
+.top-bar-section .top-bar-parrents .top-bar-two ul{
+    justify-content: end;
+}
+.top-bar-section .top-bar-parrents .top-bar-two ul li{
+    margin-left: 20px;
+}
+
+
+/* =============================Nav Bar Section======================= */
+
+.nav-bar-section .nav-bar-parrents .nav-bar-one,
+.nav-bar-section .nav-bar-parrents .nav-bar-two{
+    width: 50%;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul{
+    justify-content: space-between;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li{
+       padding: 40px 20px; 
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li:hover{
+    background-color:#fbfbfb; 
+ }  
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li a{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: OpenSans-SemiBold;
+    color: #0c1f38;
+    text-transform: uppercase;
+}
+
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li {
+    position: relative;
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li:hover:after{
+    width: 100%;
+}
+.nav-bar-section .nav-bar-parrents .nav-bar-two .menu-bar ul li::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0c1f38;
+    bottom: 0;
+    transition: 1s;
+}
+
+
+/* ======================== service banner and overly ============================= */
+
+.service-banner-section{
+    background-image: url(/img/service-banner-overly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    
+}
+.service-banner-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/service-banner-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    opacity: .3;
+    
+}
+.service-banner-section .banner-text{
+    text-align: center;
+}
+.service-banner-section .banner-text h2{
+    font-size: 32px;
+    line-height: 38px;
+    font-family: OpenSans-ExtraBold;
+    color: #ffffff;
+}
+.service-banner-section .banner-text p{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: OpenSans-Regular;
+    color: #ffffff;
+}
+
+/* ==================== service offer section ============================= */
+.service-offer-section{
+    margin-top: 85px;
+}
+.service-offer-section .text-border{
+    text-align: center;
+
+}
+.service-offer-section .text-border h2{
+    position: relative;
+}
+
+.service-offer-section .text-border .border-left{
+    position: relative;
+}
+.service-offer-section .text-border .border-left::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    background: #173a69;
+    left: -91px;
+    top: 62px;
+}
+.service-offer-section .text-border h2::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 50%;
+    background: #173a69;
+    bottom: -100%;
+    transform: rotate(45deg);
+}
+.service-offer-section .text-border .border-right{
+    position: relative;
+}
+.service-offer-section .text-border .border-right::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 80px;
+    background: #173a69;
+    right: -99px;
+    bottom: -29px;
+}
+
+.service-offer-section .service-offer-parrents{
+    justify-content: space-around;
+}
+.service-offer-section .service-offer-parrents .service-offer-one ,
+.service-offer-section .service-offer-parrents .service-offer-two ,
+.service-offer-section .service-offer-parrents .service-offer-three {
+    padding: 65px 0;
+}
+.service-offer-section .service-offer-parrents .service-offer-one img,
+.service-offer-section .service-offer-parrents .service-offer-two img,
+.service-offer-section .service-offer-parrents .service-offer-three img{
+    padding: 35px 0;
+}
+.service-offer-section .service-offer-parrents .service-offer-one img{
+    margin-left: 10px;
+}
+.service-offer-section .service-offer-parrents .service-offer-two img{
+    margin-left: 45px;
+}
+.service-offer-section .service-offer-parrents .service-offer-three img{
+    margin-left: 25px;
+}
+
+
+/* ======================= service card section ========================== */
+.service-card-section {
+    background-color: #f8f8f8;
+    padding: 115px 0;
+    margin-top: 60px;
+}
+.service-card-section .cards-parrents{
+    column-gap: 2%;
+    
+}
+.service-card-section .cards-parrents .card-one{
+    width: 32%;
+    
+}
+
+.service-card-section .cards-parrents .card-one .card-img img{
+    width: 100%;
+}
+
+.service-card-section .cards-parrents .card-one .card-text h3{
+    font-size: 22px;
+    line-height: 28px;
+    font-family: OpenSans-Regular;
+    color: #173a69;
+    margin:15px 0; 
+}
+
+.service-card-section .cards-parrents .card-one .card-text p{
+    font-size: 15px;
+    line-height: 21px;
+    font-family: OpenSans-Regular;
+    
+}
+
+/* =================================== project-today-section ============================ */
+.project-today-section{
+    background-color: #173a69;
+    padding: 85px 0;
+}
+
+
+.project-today-section .project-today-parrents{
+    justify-content: center;
+    align-items: center;
+}
+.project-today-section .project-today-parrents .pra p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: OpenSans-Regular;
+    color: #ffff;
+}
+.project-today-section .project-today-parrents .number h2{
+    margin-left: 10px;
+    font-family: OpenSans-ExtraBold;
+    color: #ffff;
+}
+
+/* ===============================  last-section  =============================== */
+
+.last-section .last-section-parrents .logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-section .last-section-parrents .logo-img img {
+    height: 120px;
+    width: 230px;
+    margin: 60px 0 20px 0;
+}
+.last-section .last-section-parrents .social-icons ul{
+    justify-content: center;
+    align-items: center;
+}
+.last-section .last-section-parrents .social-icons ul li a i{
+    color:#acacac ;
+}
+
+.last-section .last-section-parrents .social-icons ul .facebook{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul .twiter{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 18px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul .google{
+    border: 1px solid #acacac;
+    margin: 20px 20px;
+    padding: 15px 16px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.last-section .last-section-parrents .social-icons ul li:hover{
+    background: #acacac;
+    cursor: pointer;
+   
+}
+.last-section .last-section-parrents .social-icons ul li:hover a i{
+    color: #173a69;
+}
+
+/* ============================== footer ============================= */
+.footer-section{
+    background-color: #000000;
+    padding: 25px 0;
+    margin-top: 65px;
+}
+.footer-section .text p{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: OpenSans-semiBold;
+    color: #ffff;
+    text-align: center;
+}
+.footer-section .text p a{
+    color: #ffff;
+    text-decoration: underline;
+    font-family: OpenSans-Bold;
+}
